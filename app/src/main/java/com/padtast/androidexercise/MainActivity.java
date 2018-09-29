@@ -1,7 +1,9 @@
 package com.padtast.androidexercise;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +11,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dsd();
     }
+    /**
+     *@author zhangshubin
+     *@time 2018/9/25
+     *@desc
+     */
+    public void dsd(){
+      findViewById(R.id.textivew).setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent view = new Intent(MainActivity.this, com.padtast.recyclerviewlibrary.MainActivity.class);
+              startActivity(view);
+          }
+      });
+    }
+    private static final String KEY_ = "";
 }
