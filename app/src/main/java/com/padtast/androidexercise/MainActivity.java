@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.padtast.recyclerviewlibrary.paymentrecord.activity.PaymentRecordActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
       findViewById(R.id.textivew).setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-              Intent view = new Intent(MainActivity.this, com.padtast.recyclerviewlibrary.MainActivity.class);
+              Intent view = new Intent(MainActivity.this, PaymentRecordActivity.class);
               startActivity(view);
           }
       });

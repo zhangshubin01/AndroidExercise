@@ -48,7 +48,7 @@
                     android:text="收藏"/>
             </LinearLayout>
         </LinearLayout>
-        <android.support.v7.widget.RecyclerView
+        <com.padtast.recyclerviewlibrary.paymentrecord.Myview
             android:id="@+id/productRv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

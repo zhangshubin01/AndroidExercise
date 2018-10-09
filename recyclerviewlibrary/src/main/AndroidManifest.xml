@@ -4,7 +4,7 @@
 
     <application>
         <activity android:name=".MainActivity" />
-        <activity android:name=".paymentrecord.activity.adapter.PaymentRecordActivity"></activity>
+        <activity android:name=".paymentrecord.activity.PaymentRecordActivity"></activity>
     </application>
 
 </manifest>

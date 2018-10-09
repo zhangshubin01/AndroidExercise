@@ -1,15 +1,1 @@
-package com.padtast.recyclerviewlibrary.paymentrecord.activity;
-
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-import com.padtast.recyclerviewlibrary.R;
-
-public class PaymentRecordActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment_record);
-    }
-}
+package com.padtast.recyclerviewlibrary.paymentrecord.activity;import android.support.v4.content.ContextCompat;import android.support.v7.app.AppCompatActivity;import android.os.Bundle;import android.support.v7.widget.DividerItemDecoration;import android.support.v7.widget.LinearLayoutManager;import android.support.v7.widget.RecyclerView;import com.padtast.recyclerviewlibrary.R;import com.padtast.recyclerviewlibrary.paymentrecord.Myview;import com.padtast.recyclerviewlibrary.paymentrecord.adapter.SecondaryTitle2Adapter;import com.padtast.recyclerviewlibrary.paymentrecord.adapter.TitleAdapter;import com.padtast.recyclerviewlibrary.paymentrecord.bean.paymentTrecordBean;import java.util.ArrayList;import java.util.List;public class PaymentRecordActivity extends AppCompatActivity {    @Override    protected void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);        setContentView(R.layout.activity_payment_record);        Myview recyclerView = findViewById(R.id.recyclerView5);        List<paymentTrecordBean.paymentTrecordBean2> list = new ArrayList<>();        for (int i = 1; i < 4; i++) {            paymentTrecordBean.paymentTrecordBean2 paymentTrecordBean2 = new paymentTrecordBean.paymentTrecordBean2();            paymentTrecordBean2.setMoney(i+"元");            paymentTrecordBean2.setName("三级"+i);            list.add(paymentTrecordBean2);        }        List<paymentTrecordBean.paymentTrecordBean1> list2 = new ArrayList<>();        for (int i = 1; i < 6; i++) {             paymentTrecordBean.paymentTrecordBean1 paymentTrecordBean1 = new paymentTrecordBean.paymentTrecordBean1();             paymentTrecordBean1.setMoney(i+"元");             paymentTrecordBean1.setName("二级"+i);            if(i ==2){             paymentTrecordBean1.setList(list);            }             list2.add(paymentTrecordBean1);        }        List<List<paymentTrecordBean.paymentTrecordBean1>> list3 = new ArrayList<>();        for (int i = 1; i < 4; i++) {            list3.add(list2);        }        TitleAdapter titleAdapter = new TitleAdapter(getApplicationContext(), list3);        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);        recyclerView.setLayoutManager(linearLayoutManager);        recyclerView.setAdapter(titleAdapter);        DividerItemDecoration divider = new DividerItemDecoration(getApplicationContext(),DividerItemDecoration.VERTICAL);        divider.setDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.borders));        recyclerView.addItemDecoration(divider);    }}

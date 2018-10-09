@@ -29,7 +29,7 @@ public class paymentTrecordBean {
         this.list = list;
     }
 
-    class  paymentTrecordBean1{
+  public static class  paymentTrecordBean1{
         private String name;
         private String money;
         List<paymentTrecordBean2> list;
@@ -68,7 +68,7 @@ public class paymentTrecordBean {
         }
     }
 
-    class paymentTrecordBean2{
+    public static  class paymentTrecordBean2{
         private String name;
         private String money;
 
