@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
      *@desc
      */
     public void dsd(){
-      findViewById(R.id.textivew).setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-              Intent view = new Intent(MainActivity.this, PaymentRecordActivity.class);
-              startActivity(view);
-          }
-      });
+//      findViewById(R.id.textivew).setOnClickListener(new View.OnClickListener() {
+//          @Override
+//          public void onClick(View v) {
+//              Intent view = new Intent(MainActivity.this, PaymentRecordActivity.class);
+//              startActivity(view);
+//          }
+//      });
     }
     private static final String KEY_ = "";
 }
