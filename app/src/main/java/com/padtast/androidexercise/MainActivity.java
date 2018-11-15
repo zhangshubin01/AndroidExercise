@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.padtast.androidexercise.ImageBlendsIntoBackgroundColorPackage.Main3Activity;
 import com.padtast.recyclerviewlibrary.paymentrecord.activity.PaymentRecordActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
      *@desc
      */
     public void dsd(){
-//      findViewById(R.id.textivew).setOnClickListener(new View.OnClickListener() {
-//          @Override
-//          public void onClick(View v) {
-//              Intent view = new Intent(MainActivity.this, PaymentRecordActivity.class);
-//              startActivity(view);
-//          }
-//      });
+      findViewById(R.id.textivew).setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent view = new Intent(MainActivity.this, Main3Activity.class);
+              startActivity(view);
+          }
+      });
     }
     private static final String KEY_ = "";
 }

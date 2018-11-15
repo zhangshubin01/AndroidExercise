@@ -24,4 +24,7 @@ dependencies {
     implementation project(':jsbridgeexercise')
     implementation project(':recyclerviewlibrary')
     implementation project(':baselibrary')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
