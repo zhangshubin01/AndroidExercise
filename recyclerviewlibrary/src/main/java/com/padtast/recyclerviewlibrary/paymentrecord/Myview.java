@@ -11,7 +11,6 @@ import android.view.View;
 /**
  * @author zhangshubin
  * @time 2018-09-29 18:13
- * @email shubin.zhang@ucarinc.com
  * @tel 3487
  * @desc
  */

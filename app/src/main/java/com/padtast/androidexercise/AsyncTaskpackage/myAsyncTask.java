@@ -6,7 +6,6 @@ import android.os.AsyncTask;
 /**
  * @author zhangshubin
  * @time 2018-10-10 15:10
- * @email shubin.zhang@ucarinc.com
  * @tel 3487
  * @desc
  * AsyncTask　<Params, Progress, Result>

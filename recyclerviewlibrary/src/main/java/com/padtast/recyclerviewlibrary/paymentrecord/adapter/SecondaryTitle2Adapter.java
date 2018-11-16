@@ -20,7 +20,6 @@ import butterknife.ButterKnife;
 /**
  * @author zhangshubin
  * @time 2018-09-29 16:45
- * @email shubin.zhang@ucarinc.com
  * @tel 3487
  * @desc
  */

@@ -5,7 +5,6 @@ import java.util.List;
 /**
  * @author zhangshubin
  * @time 2018-09-29 14:50
- * @email shubin.zhang@ucarinc.com
  * @tel 3487
  * @desc
  */
