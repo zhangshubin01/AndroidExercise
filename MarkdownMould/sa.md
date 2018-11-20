@@ -1,0 +1,1 @@
+<iframe src="/map.html" width="600" height="300" frameborder="0" scrolling="no"></iframe>
